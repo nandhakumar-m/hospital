@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="hospital.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R V HOSPITAL</title>
+</head>
+<body>
+    <div id="sectionHome">
+        <img src="https://www.healthstaffrecruitment.com.au/wp-content/uploads/2018/05/Portrait-of-cheerful-doctors.jpg" class="doctors-image"/>
+            <div class="welcome-card">
+                <h1 class="main-heading">WELCOME</h1>
+                <p class="paragraph">Concert your Expert</p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionFavouritePlaces">
+        <div class="specialistcard">
+            <h1 class="specialist-heading">SPECIALISTS</h1>
+            <div class="specialist-card-container" onclick="display('section')">
+                <div>
+                    <h1 class="specialist-card-heading">Cardiologists</h1>
+                    <p class="specialist-card-description">
+                        specialize in the diagnosis and treatment of conditions or diseases
+                        of the cardiovascular system
+                        
+                    </p>
+                </div>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.htasOzOCpUcF-jhnYZcsYwHaEK&pid=Api&P=0" class="diseasesimage" />
+            </div>
+            <div class="specialist-card-container" onclick="display('section')">
+                <div>
+                    <h1 class="specialist-card-heading">Pulmonologist</h1>
+                    <p class="specialist-card-description">
+                        Pulmonologists are medical professionals who diagnose and treat 
+                        lung conditions
+                    </p>
+                </div>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.OZEeg0qZhTLN9K9bkhO0lAHaER&pid=Api&P=0" class="diseasesimage" />
+            </div>
+            <div class="specialist-card-container" onclick="display('section')">
+                <div>
+                    <h1 class="specialist-card-heading">Neurologist</h1>
+                    <p class="specialist-card-description">
+                        A neurologist is a medical doctor who specializes in diagnosing
+                        and treating diseases of the brain, spinal cord and nerves
+                    </p>
+                </div>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.-tXBSWCie64lnifIAtJz-AHaEZ&pid=Api&P=0" class="diseasesimage" />
+            </div>
+            <div class="specialist-card-container" onclick="display('section')">
+                <div>
+                    <h1 class="specialist-card-heading"> Nephrologist</h1>
+                    <p class="specialist-card-description">
+                        A nephrologist is a type of doctor that specializes in diseases 
+                        and conditions that affect the kidneys
+                    </p>
+                </div>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.tawczeMiiMr8tiwdXK202AHaEz&pid=Api&P=0" class="diseasesimage" />
+            </div>
+            
+            <button class="btn" onclick="display('sectionHome')">back</button>
+            
+        </div>
+    </div>
+
+
+    <div id="section">
+    <div class="wrapper">
+        <br>
+        <br>
+        <img class="all-doctors" src="img/doc1.jpg" alt="all-doctors">
+        <div class="text-box">
+            <h2>DR.PRAKASH</h2>
+            <p>CHIEF DOCTOR</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="all-doctors" src="img/doc2.jpg" alt="all-doctors">
+        <div class="text-box">
+            <h2>DR.PREETHI</h2>
+            <p>ASSISTANT DOCTOR</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="all-doctors" src="img/doc3.jpg" alt="all-doctors">
+        <div class="text-box">
+            <h2>DR.RAMYA</h2>
+            <p>ASSISTANT DOCTOR</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <a onclick="display('sectionFavouritePlaces')" class="back-button">Go Back</a>
+            <div class="mail">
+            <br>
+            <br>
+            <h1>BOOK YOR APPOINMENT</h1>
+            <p>Please enter your user ID:</p>
+            <input type="text" id="userIdInput" placeholder="Your User ID">
+            <button onclick="sendEmail()" class="mail-button">Send Email</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <script src="script.js"></script>
+            </div>
+        </div>
+    </div> 
+ </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script> 
+</body>
+
+</html>
