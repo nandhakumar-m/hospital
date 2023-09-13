@@ -1,5 +1,5 @@
 function sendEmail() {
-    const defaultReceiver = 'manomano8321@gmail.com';
+    const defaultReceiver = 'nandhakumar18@gmail.com';
     const defaultContent = 'Hey buddy!';
 
     const userId = document.getElementById('userIdInput').value;
